@@ -11,18 +11,12 @@
     function getComputerChoice() {
       let rps = ['Rock', 'Paper', 'Scissors'];
 
-      let compChoice = rps[Math.floor(Math.random() * rps.length)];
-      return compChoice;
+      let compChoice = rps[1];
+
+      console.log(compChoice)
     }
     //make a variable storing the computer choice
-    let compSelection = getComputerChoice();
-
     //make a variable to store the player choice
-    let playerInput = prompt("Rock, Paper, Scissors?");
-    console.log(playerInput)
-    let playerSelection = playerInput.charAt(0).toUpperCase() + playerInput.slice(1).toLowerCase();
-    console.log(playerSelection)
-
     //make a conditional function for game round to see who wins
   </script>
 </body>

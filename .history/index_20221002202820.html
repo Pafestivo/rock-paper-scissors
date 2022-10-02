@@ -18,9 +18,7 @@
     let compSelection = getComputerChoice();
 
     //make a variable to store the player choice
-    let playerInput = prompt("Rock, Paper, Scissors?");
-    console.log(playerInput)
-    let playerSelection = playerInput.charAt(0).toUpperCase() + playerInput.slice(1).toLowerCase();
+    let playerSelection = prompt("Rock, Paper, Scissors?").silce(1);
     console.log(playerSelection)
 
     //make a conditional function for game round to see who wins
