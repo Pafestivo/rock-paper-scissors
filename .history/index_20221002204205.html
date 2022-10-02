@@ -16,40 +16,23 @@
     }
     //make a variable storing the computer choice
     let compSelection = getComputerChoice();
+    console.log(compSelection);
 
     //make a variable to store the player choice
     let playerInput = prompt("Rock, Paper, Scissors?");
     //make a variable to adjust any text to the same template
     let playerSelection = playerInput.charAt(0).toUpperCase() + playerInput.slice(1).toLowerCase();
-    console.log(playerSelection);
 
     //make a conditional function for game round to see who wins
-    function gameRound() {
-      // rock > paper
+    function gameRound(playerSelection, compSelection) {
       if (playerSelection === 'Rock' && compSelection === 'Paper') {
       console.log("You lose! Paper beats rock.")
-    } else if (playerSelection === 'Paper' && compSelection === 'Rock') {
-      console.log("You win! Paper beats rock.")
-
-      // paper > scissors
-    } else if (playerSelection === 'Paper' && compSelection === 'Scissors') {
-      console.log("You lose! Scissors beats paper.")
-    } else if (playerSelection === 'Scissors' && compSelection === 'Paper') {
-      console.log("You win! Scissors beats paper.")
-
-      //rock > scissors
-    } else if (playerSelection === 'Scissors' && compSelection === 'Rock') {
-      console.log("You lose! Rock beats scissors.")
-    } else if (playerSelection === 'Rock' && compSelection === 'Scissors') {
-      console.log("You win! Rock beats scissors.")
-
-      //draw
     } else {
-      console.log("It's a draw!")
+      console.log("HI!")
     }
   }
+
     gameRound();
-    console.log("Computer chose " + compSelection + ".");
   </script>
 </body>
 </html>
