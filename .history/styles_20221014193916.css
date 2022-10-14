@@ -73,7 +73,7 @@ button:disabled:hover {
 
 .comp-choice {
   position: absolute;
-  bottom: 5px;
+  top: 75px;
   right: 10px;
   font-size: 20px;
   max-width: 20px;
