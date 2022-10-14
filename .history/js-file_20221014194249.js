@@ -40,13 +40,12 @@ function playRound(playerSelection, computerSelection) {
   computerPoints.textContent = computerScore;
 
 
-  //finish the game at 5 points + show play again button
+  //finish the game at 5 points
   const buttons = document.querySelectorAll('button');
   if(playerScore === 5) {
     for(i = 0; i < buttons.length; i++) {
       buttons[i].setAttribute("disabled", "disabled");
     }
-    
     return "You won!";
 
   } else if (computerScore === 5) {

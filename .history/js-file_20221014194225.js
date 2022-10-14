@@ -7,6 +7,8 @@ const playerPoints = document.getElementById('player-points');
 const computerColumn = document.querySelector('.comp');
 const computerPoints = document.getElementById('computer-points');
 
+
+
 //round logic
 function playRound(playerSelection, computerSelection) {
 
@@ -39,14 +41,13 @@ function playRound(playerSelection, computerSelection) {
 
   computerPoints.textContent = computerScore;
 
-
-  //finish the game at 5 points + show play again button
   const buttons = document.querySelectorAll('button');
+
+  //finish the game at 5 points
   if(playerScore === 5) {
     for(i = 0; i < buttons.length; i++) {
       buttons[i].setAttribute("disabled", "disabled");
     }
-    
     return "You won!";
 
   } else if (computerScore === 5) {

@@ -120,12 +120,6 @@ button:disabled:hover {
   margin-top: 10px;
 }
 
-a {
-  text-decoration: none;
-  color: inherit;
-}
-
 #play-again {
-  background-color: red;
   margin: 0 auto;
 }
