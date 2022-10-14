@@ -39,6 +39,7 @@ function getComputerChoice() {
 
 
 const results = document.querySelector('#results');
+const para = document.createElement('p');
 
 
 //function for each player selection
@@ -46,8 +47,6 @@ function rockRound() {
   let computerSelection = getComputerChoice();
   console.log(computerSelection);
 
-  const para = document.createElement('p');
-  para.classList.add('round-result');
   para.textContent = playRound("Rock", computerSelection);
   results.appendChild(para);
 };
@@ -56,8 +55,6 @@ function paperRound() {
   let computerSelection = getComputerChoice();
   console.log(computerSelection);
   
-  const para = document.createElement('p');
-  para.classList.add('round-result');
   para.textContent = playRound("Rock", computerSelection);
   results.appendChild(para);
 };
@@ -66,8 +63,6 @@ function scissorsRound() {
   let computerSelection = getComputerChoice();
   console.log(computerSelection);
 
-  const para = document.createElement('p');
-  para.classList.add('round-result');
   para.textContent = playRound("Rock", computerSelection);
   results.appendChild(para);
 };

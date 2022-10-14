@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: serif;
+  background-color: #000000
+}
+
+.buttons {
+  display: flex;
+  background-color: white;
+  width: 400px;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+
+button {
+  width: 100px;
+  height: 100px;
+  background-color: #ED5E93;
+  border: none;
+}
+
+#results {
+  margin: 40px auto 0 auto;
+  width: 500px;
+  height: 400px;
+  padding: 1px;
+  background-color: #FFF4F9;
+}
+
+#results-header {
+  margin: 5px auto 0 auto;
+  font-size: 3em;
+  width: max-content;
+  border-bottom: 1px solid black;
+}
+
+.round-result {
+  margin: 5px;
+  text-align: center;
+  padding: 0;  
+}

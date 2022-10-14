@@ -1,0 +1,21 @@
+button {
+  width: 100px;
+  height: 100px;
+}
+
+#results {
+  margin: 40px auto 0 auto;
+  width: 500px;
+  height: 400px;
+  background-color: teal;
+}
+
+#results-header {
+  text-align: center;
+}
+
+.round-result {
+  margin: 5px;
+  text-align: center;
+  padding: 0;  
+}
