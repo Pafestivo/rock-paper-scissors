@@ -28,7 +28,6 @@ function playRound(playerSelection, computerSelection) {
     log = "This round is a draw!"
   } 
 
-  //finish the game at 5 points
   if(playerScore === 5) {
     const buttons = document.querySelectorAll('button');
     for(i = 0; i < buttons.length; i++) {

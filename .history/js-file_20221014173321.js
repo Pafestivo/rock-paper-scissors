@@ -6,6 +6,14 @@ let computerScore = 0;
 function playRound(playerSelection, computerSelection) {
   let log = ""
 
+  //check if a player already has 5 points
+  if(playerScore == 5 || computerScore == 5) {
+    const buttons = document.querySelectorAll('button');
+    for(i = 0; i < buttons.length; i++) {
+      buttons[i].setAttribute("disabled", "disabled");
+    }
+  }
+
   if (
     (playerSelection === "Rock" && computerSelection === "Paper") ||
     (playerSelection === "Paper" && computerSelection === "Scissors") ||
@@ -28,19 +36,9 @@ function playRound(playerSelection, computerSelection) {
     log = "This round is a draw!"
   } 
 
-  //finish the game at 5 points
   if(playerScore === 5) {
-    const buttons = document.querySelectorAll('button');
-    for(i = 0; i < buttons.length; i++) {
-      buttons[i].setAttribute("disabled", "disabled");
-    }
     return "You won!";
-
   } else if (computerScore === 5) {
-    const buttons = document.querySelectorAll('button');
-    for(i = 0; i < buttons.length; i++) {
-      buttons[i].setAttribute("disabled", "disabled");
-    }
     return "You lost!";
   }
 
