@@ -36,37 +36,7 @@ function getComputerChoice() {
   const randomize = Math.floor(Math.random() * possibleChoices.length); 
   return(possibleChoices[randomize]);
 };
+let computerSelection = getComputerChoice();
 
-
-//function for each player selection
-function rockRound() {
-  let computerSelection = getComputerChoice();
-  console.log(computerSelection);
-  console.log(playRound("Rock", computerSelection));
-};
-
-function paperRound() {
-  let computerSelection = getComputerChoice();
-  console.log(computerSelection);
-  console.log(playRound("Paper", computerSelection));
-};
-
-function scissorsRound() {
-  let computerSelection = getComputerChoice();
-  console.log(computerSelection);
-  console.log(playRound("Scissors", computerSelection));
-};
-//end of player selection functions
-
-
-//adding event listeners to each button
 const rock = document.querySelector('#rock');
-rock.addEventListener("click", rockRound);
-
-const paper = document.querySelector('#paper');
-paper.addEventListener("click", paperRound);
-
-const scissors = document.querySelector('#scissors');
-scissors.addEventListener("click", scissorsRound);
-
-
+rock.addEventListener("click", playRound);

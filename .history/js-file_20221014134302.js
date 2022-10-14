@@ -59,7 +59,6 @@ function scissorsRound() {
 //end of player selection functions
 
 
-//adding event listeners to each button
 const rock = document.querySelector('#rock');
 rock.addEventListener("click", rockRound);
 
