@@ -36,7 +36,7 @@ function playRound(playerSelection, computerSelection) {
     log = "This round is a draw!"
   } 
 
-  playerPoints.textContent = playerScore;
+  playerPoints.textContent = "playerScore";
 
   computerPoints.textContent = computerScore;
 

@@ -2,10 +2,10 @@ let playerScore = 0;
 let computerScore = 0;
 
 const playerColumn = document.querySelector('.player');
-const playerPoints = document.getElementById('player-points');
+const playerPoints = document.getElementsByClassName('points');
 
 const computerColumn = document.querySelector('.comp');
-const computerPoints = document.getElementById('computer-points');
+const computerPoints = document.querySelectorAll('points');
 
 
 //round logic
