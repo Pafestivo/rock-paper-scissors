@@ -65,17 +65,12 @@ button:focus {
   background-color: #635656;
 }
 
-button:disabled:hover {
-  cursor: not-allowed;
-  background-color: #35373B;
-}
-
 #results {
   margin: 40px auto 0 auto;
   width: 700px;
   height: 475px;
   padding: 1px;
-  background-color: #35373B;
+  background-color: black;
 }
 
 #scores-header {

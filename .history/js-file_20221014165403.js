@@ -1,17 +1,6 @@
-let playerScore = 0;
-let computerScore = 0;
-
-
 //round logic
 function playRound(playerSelection, computerSelection) {
   let log = ""
-
-  if(playerScore == 5 || computerScore == 5) {
-    const buttons = document.querySelectorAll('button');
-    for(i = 0; i < buttons.length; i++) {
-      buttons[i].setAttribute("disabled", "disabled");
-    }
-  }
 
   if (
     (playerSelection === "Rock" && computerSelection === "Paper") ||
@@ -19,7 +8,6 @@ function playRound(playerSelection, computerSelection) {
     (playerSelection === "Scissors" && computerSelection === "Rock")
     ) {
     log = "You lost this round!"
-    computerScore++
   } 
   else if (
     (playerSelection === "Paper" && computerSelection === "Rock") ||
@@ -27,7 +15,6 @@ function playRound(playerSelection, computerSelection) {
     (playerSelection === "Scissors" && computerSelection === "Paper")    
   ) {
     log = "You won this round!"
-    playerScore++
   } 
   else if (
     (playerSelection === computerSelection)    
@@ -35,14 +22,6 @@ function playRound(playerSelection, computerSelection) {
     log = "This round is a draw!"
   } 
 
-  if(playerScore === 5) {
-    return "You won!";
-  } else if (computerScore === 5) {
-    return "You lost!";
-  }
-
-  console.log(playerScore);
-  console.log(computerScore);
   return log;
 };
 
@@ -59,9 +38,8 @@ const para = document.createElement('p');
 para.classList.add('round-result');
 
 
-//function for event listeners
+//function for each player selection
 function rockRound() {
-  
   let computerSelection = getComputerChoice();
   console.log(computerSelection);
 
@@ -71,6 +49,7 @@ function rockRound() {
   results.appendChild(para);
   return roundResult;
 };
+
 
 function paperRound() {
   let computerSelection = getComputerChoice();
@@ -87,7 +66,7 @@ function scissorsRound() {
   para.textContent = playRound("Scissors", computerSelection);
   results.appendChild(para);
 };
-//end of event listeners functions
+//end of player selection functions
 
 
 //adding event listeners to each button
@@ -101,4 +80,8 @@ const scissors = document.querySelector('#scissors');
 scissors.addEventListener("click", scissorsRound);
 
 
+function game() {
+
+  console.log(rockRound());
+}
 

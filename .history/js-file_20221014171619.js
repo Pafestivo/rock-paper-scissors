@@ -7,10 +7,7 @@ function playRound(playerSelection, computerSelection) {
   let log = ""
 
   if(playerScore == 5 || computerScore == 5) {
-    const buttons = document.querySelectorAll('button');
-    for(i = 0; i < buttons.length; i++) {
-      buttons[i].setAttribute("disabled", "disabled");
-    }
+    document.querySelectorAll("button").setAttribute("disabled", "disabled");
   }
 
   if (
@@ -59,7 +56,7 @@ const para = document.createElement('p');
 para.classList.add('round-result');
 
 
-//function for event listeners
+//function for each player selection
 function rockRound() {
   
   let computerSelection = getComputerChoice();
@@ -71,6 +68,7 @@ function rockRound() {
   results.appendChild(para);
   return roundResult;
 };
+
 
 function paperRound() {
   let computerSelection = getComputerChoice();
@@ -87,7 +85,7 @@ function scissorsRound() {
   para.textContent = playRound("Scissors", computerSelection);
   results.appendChild(para);
 };
-//end of event listeners functions
+//end of player selection functions
 
 
 //adding event listeners to each button

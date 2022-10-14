@@ -65,11 +65,6 @@ button:focus {
   background-color: #635656;
 }
 
-button:disabled:hover {
-  cursor: not-allowed;
-  background-color: #35373B;
-}
-
 #results {
   margin: 40px auto 0 auto;
   width: 700px;
