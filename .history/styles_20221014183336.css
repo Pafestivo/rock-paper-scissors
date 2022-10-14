@@ -43,7 +43,6 @@ header {
 }
 
 button {
-  position: relative;
   width: 190px;
   height: 100px;
   background-color: #35373B;
@@ -71,11 +70,8 @@ button:disabled:hover {
   background-color: #35373B;
 }
 
-.comp-choice {
-  position: absolute;
-  top: 75px;
-  right: -80px;
-  font-size: 20px;
+button i {
+  font-size: 2px;
 }
 
 #results {

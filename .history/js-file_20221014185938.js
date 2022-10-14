@@ -7,7 +7,6 @@ const playerPoints = document.getElementById('player-points');
 const computerColumn = document.querySelector('.comp');
 const computerPoints = document.getElementById('computer-points');
 
-const buttons = document.querySelectorAll('button');
 
 //round logic
 function playRound(playerSelection, computerSelection) {
@@ -43,12 +42,14 @@ function playRound(playerSelection, computerSelection) {
 
   //finish the game at 5 points
   if(playerScore === 5) {
+    const buttons = document.querySelectorAll('button');
     for(i = 0; i < buttons.length; i++) {
       buttons[i].setAttribute("disabled", "disabled");
     }
     return "You won!";
 
   } else if (computerScore === 5) {
+    const buttons = document.querySelectorAll('button');
     for(i = 0; i < buttons.length; i++) {
       buttons[i].setAttribute("disabled", "disabled");
     }
@@ -66,23 +67,13 @@ function getComputerChoice() {
   const randomize = Math.floor(Math.random() * possibleChoices.length); 
   let selected = possibleChoices[randomize];
 
-  if(document.querySelector('button #robot') != null) { //checks to see if robot icon already exists
-    const robotIcon = document.getElementById('robot');
-    const parent = document.getElementById('robot').parentElement;
-    parent.removeChild(robotIcon); //remove the icon if it exists
-  } 
-
-  if (selected === "Rock") {
-    const rockChosen = document.querySelector('#rock'); 
-    rockChosen.insertAdjacentHTML('beforeend', '<i id="robot" class="fa-solid fa-robot comp-choice"></i>'); //adds robot icon
-  
-  } else if (selected === "Paper") {
-    const paperChosen = document.querySelector('#paper');
-    paperChosen.insertAdjacentHTML('beforeend', '<i id="robot" class="fa-solid fa-robot comp-choice"></i>');
-  
-  } else if (selected === "Scissors") {
-    const scissorsChosen = document.querySelector('#scissors');
-    scissorsChosen.insertAdjacentHTML('beforeend', '<i id="robot" class="fa-solid fa-robot comp-choice"></i>');
+  const rockChosen = document.getElementById('rock');
+  if(selected === "Rock") {
+    if(rockChosen.querySelector("#robot") != null) {
+      const icon = document.getElementById('robot');
+      rockChosen.removeChild(icon);
+    }
+    rockChosen.insertAdjacentHTML('beforeend', '<i id="robot" class="fa-solid fa-robot comp-choice"></i>')
   }
 
   return selected;

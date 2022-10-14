@@ -66,24 +66,7 @@ function getComputerChoice() {
   const randomize = Math.floor(Math.random() * possibleChoices.length); 
   let selected = possibleChoices[randomize];
 
-  if(document.querySelector('button #robot') != null) { //checks to see if robot icon already exists
-    const robotIcon = document.getElementById('robot');
-    const parent = document.getElementById('robot').parentElement;
-    parent.removeChild(robotIcon); //remove the icon if it exists
-  } 
 
-  if (selected === "Rock") {
-    const rockChosen = document.querySelector('#rock'); 
-    rockChosen.insertAdjacentHTML('beforeend', '<i id="robot" class="fa-solid fa-robot comp-choice"></i>'); //adds robot icon
-  
-  } else if (selected === "Paper") {
-    const paperChosen = document.querySelector('#paper');
-    paperChosen.insertAdjacentHTML('beforeend', '<i id="robot" class="fa-solid fa-robot comp-choice"></i>');
-  
-  } else if (selected === "Scissors") {
-    const scissorsChosen = document.querySelector('#scissors');
-    scissorsChosen.insertAdjacentHTML('beforeend', '<i id="robot" class="fa-solid fa-robot comp-choice"></i>');
-  }
 
   return selected;
 };
