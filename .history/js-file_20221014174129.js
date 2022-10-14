@@ -1,13 +1,9 @@
 let playerScore = 0;
 let computerScore = 0;
 
-const playerColumn = document.querySelector('.player');
+const playerColumn = document.querySelector('player');
 const playerPoints = document.createElement('p');
-playerPoints.classList.add('points')
-
-const computerColumn = document.querySelector('.comp');
-const computerPoints = document.createElement('p');
-computerPoints.classList.add('points')
+playerColumn.appendChild(playerPoints);
 
 
 //round logic
@@ -23,6 +19,7 @@ function playRound(playerSelection, computerSelection) {
     ) {
     log = "You lost this round!"
     computerScore++
+    playerPoints.textContent = playerScore;
   } 
   else if (
     (playerSelection === "Paper" && computerSelection === "Rock") ||
@@ -38,11 +35,6 @@ function playRound(playerSelection, computerSelection) {
     log = "This round is a draw!"
   } 
 
-  playerPoints.textContent = playerScore;
-  playerColumn.appendChild(playerPoints);
-
-  computerPoints.textContent = computerScore;
-  computerColumn.appendChild(computerPoints);
 
   //finish the game at 5 points
   if(playerScore === 5) {

@@ -73,7 +73,7 @@ button:disabled:hover {
 #results {
   margin: 40px auto 0 auto;
   width: 700px;
-  height: 250px;
+  height: 475px;
   padding: 1px;
   background-color: #35373B;
 }
@@ -87,11 +87,13 @@ button:disabled:hover {
 
 .columns {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   margin-bottom: 20px;
 }
 
-
+.player {
+  margin: 0 200px 0 30px;
+}
 
 .round-result {
   margin-bottom: 15px;

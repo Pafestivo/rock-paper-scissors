@@ -3,11 +3,7 @@ let computerScore = 0;
 
 const playerColumn = document.querySelector('.player');
 const playerPoints = document.createElement('p');
-playerPoints.classList.add('points')
-
-const computerColumn = document.querySelector('.comp');
-const computerPoints = document.createElement('p');
-computerPoints.classList.add('points')
+playerColumn.appendChild(playerPoints);
 
 
 //round logic
@@ -38,11 +34,6 @@ function playRound(playerSelection, computerSelection) {
     log = "This round is a draw!"
   } 
 
-  playerPoints.textContent = playerScore;
-  playerColumn.appendChild(playerPoints);
-
-  computerPoints.textContent = computerScore;
-  computerColumn.appendChild(computerPoints);
 
   //finish the game at 5 points
   if(playerScore === 5) {

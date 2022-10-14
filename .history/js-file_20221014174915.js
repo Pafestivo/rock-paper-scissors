@@ -3,11 +3,11 @@ let computerScore = 0;
 
 const playerColumn = document.querySelector('.player');
 const playerPoints = document.createElement('p');
-playerPoints.classList.add('points')
+playerPoints.classList.add('player-points')
 
 const computerColumn = document.querySelector('.comp');
 const computerPoints = document.createElement('p');
-computerPoints.classList.add('points')
+computerPoints.classList.add('computer-points')
 
 
 //round logic
