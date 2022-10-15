@@ -112,6 +112,7 @@ function rockRound() {
   rockChosen.insertAdjacentHTML('beforeend', '<i id="human" class="fa-solid fa-person player-choice"></i>'); //adds human icon
   
   let computerSelection = getComputerChoice();
+  console.log(computerSelection);
 
   let roundResult = playRound("Rock", computerSelection);
 
@@ -121,6 +122,7 @@ function rockRound() {
 
 function paperRound() {
   let computerSelection = getComputerChoice();
+  console.log(computerSelection);
 
   if(document.querySelector('button #human') != null) { //checks to see if human icon already exists
     const humanIcon = document.getElementById('human');
@@ -136,6 +138,7 @@ function paperRound() {
 
 function scissorsRound() {
   let computerSelection = getComputerChoice();
+  console.log(computerSelection);
 
   if(document.querySelector('button #human') != null) { //checks to see if human icon already exists
     const humanIcon = document.getElementById('human');
