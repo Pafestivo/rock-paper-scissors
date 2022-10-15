@@ -52,7 +52,7 @@ function playRound(playerSelection, computerSelection) {
     return "You won!";
 
   } else if (computerScore === 5) {
-    for(i = 0; i < buttons.length - 1; i++) {
+    for(i = 0; i < buttons.length; i++) {
       buttons[i].setAttribute("disabled", "disabled");
       playAgain.classList.remove('hidden');
     }

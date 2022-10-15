@@ -88,7 +88,7 @@ button:disabled:hover {
 }
 
 #results {
-  margin: 40px auto 40px auto;
+  margin: 40px auto 0 auto;
   width: 700px;
   height: 250px;
   padding: 1px;
@@ -107,6 +107,8 @@ button:disabled:hover {
   justify-content: space-evenly;
   margin-bottom: 20px;
 }
+
+
 
 .round-result {
   margin-bottom: 15px;
@@ -132,13 +134,7 @@ a {
 }
 
 #play-again {
-  display: block;
-  margin: 0 auto;
-  font-size: 2rem;
-  width: 200px;
-  height: 60px;
-}
-
-.hidden {
-  visibility: hidden;
+  font-size: 10em;
+  padding: 10px;
+  background-color: red;
 }

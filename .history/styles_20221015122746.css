@@ -126,19 +126,8 @@ button:disabled:hover {
   margin-top: 10px;
 }
 
-a {
-  text-decoration: none;
-  color: inherit;
-}
-
 #play-again {
   display: block;
   margin: 0 auto;
-  font-size: 2rem;
   width: 200px;
-  height: 60px;
-}
-
-.hidden {
-  visibility: hidden;
 }

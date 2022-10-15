@@ -108,6 +108,8 @@ button:disabled:hover {
   margin-bottom: 20px;
 }
 
+
+
 .round-result {
   margin-bottom: 15px;
   font-size: 2em;
@@ -132,13 +134,7 @@ a {
 }
 
 #play-again {
-  display: block;
-  margin: 0 auto;
-  font-size: 2rem;
-  width: 200px;
-  height: 60px;
-}
-
-.hidden {
-  visibility: hidden;
+  font-size: 10em;
+  margin-right: 500px;
+  background-color: red;
 }

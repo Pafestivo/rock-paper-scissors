@@ -42,19 +42,16 @@ function playRound(playerSelection, computerSelection) {
 
   //finish the game at 5 points + show play again button
   const buttons = document.querySelectorAll('button');
-  const playAgain = document.getElementById('play-again')
   if(playerScore === 5) {
     for(i = 0; i < buttons.length - 1; i++) {
       buttons[i].setAttribute("disabled", "disabled"); //disable buttons
-      playAgain.classList.remove('hidden');
     }
     
     return "You won!";
 
   } else if (computerScore === 5) {
-    for(i = 0; i < buttons.length - 1; i++) {
+    for(i = 0; i < buttons.length; i++) {
       buttons[i].setAttribute("disabled", "disabled");
-      playAgain.classList.remove('hidden');
     }
     return "You lost!";
   }
