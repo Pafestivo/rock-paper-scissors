@@ -192,25 +192,23 @@ a {
   }
 
   .comp-choice {
-    font-size: 10px;
-    right: 0;
+    font-size: 17px;
   }
   
   .player-choice {
-    font-size: 10px;
-    left: 0;
+    font-size: 17px;
   }
 
   #results {
-    width: 280px;
-    height: 180px;
-    margin-bottom: 30px;
+    width: 350px;
+    height: 220px;
   }
 
   #play-again {
     font-size: 1.5rem;
     width: 150px;
     height: 40px;
+    margin-bottom: 15px;
   }
 
 }

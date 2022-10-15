@@ -204,13 +204,13 @@ a {
   #results {
     width: 280px;
     height: 180px;
-    margin-bottom: 30px;
   }
 
   #play-again {
     font-size: 1.5rem;
     width: 150px;
     height: 40px;
+    margin-bottom: 15px;
   }
 
 }
