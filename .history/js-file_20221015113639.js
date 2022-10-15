@@ -61,12 +61,6 @@ function playRound(playerSelection, computerSelection) {
   return log;
 };
 
-//variables to target the buttons
-const rockChosen = document.querySelector('#rock'); 
-const paperChosen = document.querySelector('#paper');
-const scissorsChosen = document.querySelector('#scissors');
-
-
 //computer selection
 function getComputerChoice() {
   const possibleChoices = ["Rock", "Paper", "Scissors"];
@@ -80,12 +74,15 @@ function getComputerChoice() {
   } 
 
   if (selected === "Rock") {
+    const rockChosen = document.querySelector('#rock'); 
     rockChosen.insertAdjacentHTML('beforeend', '<i id="robot" class="fa-solid fa-robot comp-choice"></i>'); //adds robot icon
   
   } else if (selected === "Paper") {
+    const paperChosen = document.querySelector('#paper');
     paperChosen.insertAdjacentHTML('beforeend', '<i id="robot" class="fa-solid fa-robot comp-choice"></i>');
   
   } else if (selected === "Scissors") {
+    const scissorsChosen = document.querySelector('#scissors');
     scissorsChosen.insertAdjacentHTML('beforeend', '<i id="robot" class="fa-solid fa-robot comp-choice"></i>');
   }
 
@@ -101,14 +98,6 @@ para.classList.add('round-result');
 
 //function for event listeners
 function rockRound() {
-
-  if(document.querySelector('button #human') != null) { //checks to see if human icon already exists
-    const humanIcon = document.getElementById('human');
-    const parent = document.getElementById('human').parentElement;
-    parent.removeChild(humanIcon); //remove the icon if it exists
-  } 
-
-  rockChosen.insertAdjacentHTML('beforeend', '<i id="human" class="fa-solid fa-person player-choice"></i>'); //adds human icon
   
   let computerSelection = getComputerChoice();
   console.log(computerSelection);
@@ -122,14 +111,6 @@ function rockRound() {
 function paperRound() {
   let computerSelection = getComputerChoice();
   console.log(computerSelection);
-
-  if(document.querySelector('button #human') != null) { //checks to see if human icon already exists
-    const humanIcon = document.getElementById('human');
-    const parent = document.getElementById('human').parentElement;
-    parent.removeChild(humanIcon); //remove the icon if it exists
-  } 
-
-  paperChosen.insertAdjacentHTML('beforeend', '<i id="human" class="fa-solid fa-person player-choice"></i>'); //adds human icon
   
   para.textContent = playRound("Paper", computerSelection);
   results.appendChild(para);
@@ -138,14 +119,6 @@ function paperRound() {
 function scissorsRound() {
   let computerSelection = getComputerChoice();
   console.log(computerSelection);
-
-  if(document.querySelector('button #human') != null) { //checks to see if human icon already exists
-    const humanIcon = document.getElementById('human');
-    const parent = document.getElementById('human').parentElement;
-    parent.removeChild(humanIcon); //remove the icon if it exists
-  } 
-
-  scissorsChosen.insertAdjacentHTML('beforeend', '<i id="human" class="fa-solid fa-person player-choice"></i>'); //adds human icon
 
   para.textContent = playRound("Scissors", computerSelection);
   results.appendChild(para);

@@ -103,12 +103,12 @@ para.classList.add('round-result');
 function rockRound() {
 
   if(document.querySelector('button #human') != null) { //checks to see if human icon already exists
-    const humanIcon = document.getElementById('human');
-    const parent = document.getElementById('human').parentElement;
-    parent.removeChild(humanIcon); //remove the icon if it exists
+    const robotIcon = document.getElementById('robot');
+    const parent = document.getElementById('robot').parentElement;
+    parent.removeChild(robotIcon); //remove the icon if it exists
   } 
 
-  rockChosen.insertAdjacentHTML('beforeend', '<i id="human" class="fa-solid fa-person player-choice"></i>'); //adds human icon
+  rockChosen.insertAdjacentHTML('beforeend', '<i id="human" class="fa-solid fa-person player-choice"></i>'); //adds robot icon
   
   let computerSelection = getComputerChoice();
   console.log(computerSelection);
@@ -122,14 +122,6 @@ function rockRound() {
 function paperRound() {
   let computerSelection = getComputerChoice();
   console.log(computerSelection);
-
-  if(document.querySelector('button #human') != null) { //checks to see if human icon already exists
-    const humanIcon = document.getElementById('human');
-    const parent = document.getElementById('human').parentElement;
-    parent.removeChild(humanIcon); //remove the icon if it exists
-  } 
-
-  paperChosen.insertAdjacentHTML('beforeend', '<i id="human" class="fa-solid fa-person player-choice"></i>'); //adds human icon
   
   para.textContent = playRound("Paper", computerSelection);
   results.appendChild(para);
@@ -138,14 +130,6 @@ function paperRound() {
 function scissorsRound() {
   let computerSelection = getComputerChoice();
   console.log(computerSelection);
-
-  if(document.querySelector('button #human') != null) { //checks to see if human icon already exists
-    const humanIcon = document.getElementById('human');
-    const parent = document.getElementById('human').parentElement;
-    parent.removeChild(humanIcon); //remove the icon if it exists
-  } 
-
-  scissorsChosen.insertAdjacentHTML('beforeend', '<i id="human" class="fa-solid fa-person player-choice"></i>'); //adds human icon
 
   para.textContent = playRound("Scissors", computerSelection);
   results.appendChild(para);
