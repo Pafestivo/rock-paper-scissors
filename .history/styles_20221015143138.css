@@ -10,10 +10,6 @@ body {
   color: rgb(228, 228, 228);
 }
 
-#overflow-x {
-  overflow-x: hidden;
-}
-
 header {
   width: max-content;
   margin: 50px auto 30px auto;
@@ -152,10 +148,6 @@ a {
     font-size: 0.8rem;
   }
 
-  header {
-    margin: 30px auto 30px auto;
-  }
-
   #versus {
     width: 400px;
     font-size: 6rem;
@@ -166,7 +158,7 @@ a {
   }
   
   .fa-person {
-    font-size: 6rem;
+    font-size: 4rem;
   }
 
   .buttons {
@@ -180,23 +172,12 @@ a {
   }
 
   .comp-choice {
-    font-size: 17px;
+    font-size: 20px;
   }
   
   .player-choice {
-    font-size: 17px;
+    font-size: 20px;
   }
 
-  #results {
-    width: 350px;
-    height: 220px;
-  }
-
-  #play-again {
-    font-size: 1.5rem;
-    width: 150px;
-    height: 40px;
-    margin-bottom: 15px;
-  }
-
+  
 }

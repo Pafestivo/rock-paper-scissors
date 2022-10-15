@@ -10,10 +10,6 @@ body {
   color: rgb(228, 228, 228);
 }
 
-#overflow-x {
-  overflow-x: hidden;
-}
-
 header {
   width: max-content;
   margin: 50px auto 30px auto;
@@ -86,7 +82,7 @@ button:disabled:hover {
 .player-choice {
   position: absolute;
   bottom: 5px;
-  left: 2px;
+  left: 10px;
   font-size: 20px;
   max-width: 20px;
 }
@@ -152,51 +148,8 @@ a {
     font-size: 0.8rem;
   }
 
-  header {
-    margin: 30px auto 30px auto;
-  }
-
   #versus {
-    width: 400px;
+    width: 700px;
     font-size: 6rem;
   }
-
-  .fa-robot {
-    font-size: 6rem;
-  }
-  
-  .fa-person {
-    font-size: 6rem;
-  }
-
-  .buttons {
-    width: 500px;
-  }
-
-  button {
-    width: 110px;
-    height: 60px;
-    font-size: 25px;
-  }
-
-  .comp-choice {
-    font-size: 17px;
-  }
-  
-  .player-choice {
-    font-size: 17px;
-  }
-
-  #results {
-    width: 350px;
-    height: 220px;
-  }
-
-  #play-again {
-    font-size: 1.5rem;
-    width: 150px;
-    height: 40px;
-    margin-bottom: 15px;
-  }
-
 }
